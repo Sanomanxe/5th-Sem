@@ -96,7 +96,8 @@ int main(){
     getline(cin,text);
 
     if(choice==1) cout<<"Ciphertext: "<<playfair(text,key,true)<<endl;
-    else cout<<"Plaintext (raw): "<<playfair(text,key,false)<<endl;
+    else cout<<"Plaintext: "<<playfair(text,key,false)<<endl;
 
     return 0;
 }
+
