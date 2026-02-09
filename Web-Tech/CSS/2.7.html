@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pseudo Class Selector Example</title>
+
+    <style>
+        /* Link pseudo-classes */
+        a:link {
+            color: blue;
+        }
+
+        a:visited {
+            color: purple;
+        }
+
+        a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: green;
+        }
+
+        /* Form pseudo-class */
+        input:focus {
+            background-color: lightyellow;
+            border: 2px solid orange;
+        }
+
+        /* Structural pseudo-class */
+        p:first-child {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Pseudo Class Selector Demo</h1>
+
+    <p>This is the first paragraph.</p>
+    <p>This is the second paragraph.</p>
+
+    <a href="#">Hover and click this link</a>
+    <br><br>
+
+    <input type="text" placeholder="Click to focus">
+
+</body>
+</html>

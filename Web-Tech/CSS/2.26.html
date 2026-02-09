@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Box-Sizing Example</title>
+    <style>
+        .box {
+            width: 200px;
+            padding: 20px;
+            border: 5px solid black;
+            margin-bottom: 20px;
+            background-color: lightblue;
+        }
+
+        .content-box {
+            box-sizing: content-box;   /* Default */
+        }
+
+        .border-box {
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>CSS Box-Sizing Property</h2>
+
+    <h4>1. Content-box (Default)</h4>
+    <div class="box content-box">
+        Content Box
+    </div>
+
+    <h4>2. Border-box</h4>
+    <div class="box border-box">
+        Border Box
+    </div>
+
+</body>
+</html>

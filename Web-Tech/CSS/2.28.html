@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Z-Index Example</title>
+    <style>
+        .container {
+            position: relative;
+            height: 300px;
+            margin: 20px;
+        }
+
+        .box {
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            line-height: 150px;
+        }
+
+        .box1 {
+            background-color: red;
+            top: 20px;
+            left: 20px;
+            z-index: 1;
+        }
+
+        .box2 {
+            background-color: blue;
+            top: 60px;
+            left: 60px;
+            z-index: 2;
+        }
+
+        .box3 {
+            background-color: green;
+            top: 100px;
+            left: 100px;
+            z-index: 3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>CSS Z-Index Property Example</h2>
+
+    <div class="container">
+        <div class="box box1">Box 1</div>
+        <div class="box box2">Box 2</div>
+        <div class="box box3">Box 3</div>
+    </div>
+
+</body>
+</html>

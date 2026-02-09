@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Position Property</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            height: 2000px; /* for scroll */
+        }
+
+        .box {
+            width: 200px;
+            height: 80px;
+            padding: 10px;
+            margin: 20px;
+            color: white;
+        }
+
+        .static {
+            position: static;   /* Default */
+            background-color: gray;
+        }
+
+        .relative {
+            position: relative;
+            background-color: blue;
+            top: 10px;
+            left: 20px;
+        }
+
+        .absolute-container {
+            position: relative;
+            border: 2px solid black;
+            height: 150px;
+            margin: 20px;
+        }
+
+        .absolute {
+            position: absolute;
+            background-color: green;
+            top: 20px;
+            right: 20px;
+        }
+
+        .fixed {
+            position: fixed;
+            background-color: red;
+            bottom: 10px;
+            right: 10px;
+        }
+
+        .sticky {
+            position: sticky;
+            background-color: purple;
+            top: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>CSS Position Property Example</h2>
+
+    <div class="box static">Static</div>
+
+    <div class="box relative">Relative</div>
+
+    <div class="absolute-container">
+        <div class="box absolute">Absolute</div>
+    </div>
+
+    <div class="box sticky">Sticky</div>
+
+    <div class="box fixed">Fixed</div>
+
+    <p>Scroll the page to see fixed and sticky positions in action.</p>
+
+</body>
+</html>

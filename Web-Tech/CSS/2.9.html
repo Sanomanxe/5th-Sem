@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Combinator Selector Example</title>
+
+    <style>
+        /* a. Descendant selector (space) */
+        div p {
+            color: blue;
+        }
+
+        /* b. Child selector (>) */
+        div > h2 {
+            color: red;
+        }
+
+        /* c. Adjacent sibling selector (+) */
+        h2 + p {
+            background-color: lightyellow;
+        }
+
+        /* d. General sibling selector (~) */
+        h2 ~ p {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <h2>Section Heading</h2>
+        <p>This paragraph is a child of div.</p>
+
+        <span>
+            <p>This paragraph is a descendant (not direct child).</p>
+        </span>
+
+        <p>This is another paragraph.</p>
+    </div>
+
+    <p>This paragraph is outside the div.</p>
+
+</body>
+</html>

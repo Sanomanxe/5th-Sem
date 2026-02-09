@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pseudo Element Selector Example</title>
+
+    <style>
+        /* ::first-letter pseudo-element */
+        p::first-letter {
+            font-size: 30px;
+            color: red;
+            font-weight: bold;
+        }
+
+        /* ::first-line pseudo-element */
+        p::first-line {
+            color: blue;
+        }
+
+        /* ::before pseudo-element */
+        h1::before {
+            content: "★ ";
+            color: green;
+        }
+
+        /* ::after pseudo-element */
+        h1::after {
+            content: " ★";
+            color: green;
+        }
+
+        /* ::selection pseudo-element */
+        ::selection {
+            background-color: yellow;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Pseudo Element Demo</h1>
+
+    <p>
+        This paragraph demonstrates the use of pseudo element selectors in CSS.
+        Selecting text will show the selection pseudo element.
+    </p>
+
+    <p>
+        Pseudo elements allow you to style specific parts of an element.
+    </p>
+
+</body>
+</html>

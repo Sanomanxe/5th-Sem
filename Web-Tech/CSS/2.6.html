@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Attribute Selector Example</title>
+
+    <style>
+        /* a. [attribute] Selector */
+        input[type] {
+            border: 2px solid blue;
+        }
+
+        /* b. [attribute="value"] Selector */
+        input[type="text"] {
+            background-color: lightyellow;
+        }
+
+        /* c. [attribute~="value"] Selector */
+        p[class~="highlight"] {
+            color: red;
+        }
+
+        /* d. [attribute|="value"] Selector */
+        p[lang|="en"] {
+            font-style: italic;
+        }
+
+        /* e. [attribute^="value"] Selector */
+        a[href^="https"] {
+            color: green;
+        }
+
+        /* f. [attribute$="value"] Selector */
+        a[href$=".pdf"] {
+            color: purple;
+            font-weight: bold;
+        }
+
+        /* g. [attribute*="value"] Selector */
+        div[class*="box"] {
+            background-color: lightblue;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CSS Attribute Selector Demo</h1>
+
+    <input type="text" placeholder="Text input">
+
+    <input type="password" placeholder="Password input">
+
+    <p class="highlight">This paragraph has highlight class.</p>
+
+    <p class="note highlight" lang="en-us">
+        This paragraph matches multiple attribute selectors.
+    </p>
+
+    <a href="https://example.com">Secure Link</a><br>
+
+    <a href="files/report.pdf">PDF File</a>
+
+    <div class="info-box">
+        This div uses attribute* selector.
+    </div>
+
+</body>
+</html>
