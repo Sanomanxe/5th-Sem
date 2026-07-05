@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Lab17</title>
+    </head>
+    <body>
+        Enter array size:
+        <input type="number" id="num">
+        <button onclick="show()">Create Array</button>
+        <p id="para"></p>
+
+        <script>
+            function show(){
+                var num=document.getElementById("num").value;
+                var arr=[];
+                for(var i=1;i<=num;i++){
+                    let value=prompt("Enter value for element "+i);
+                    arr.push(value);
+                }
+                document.getElementById("para").innerHTML="Array:"+arr;
+
+            }
+        </script>
+    </body>
+</html>
